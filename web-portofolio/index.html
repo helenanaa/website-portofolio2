@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/programming.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Example</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Portofolio</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">About</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#certificate" class="nav__link">
+                <i class="bx bx-certification nav__icon"></i>
+                <span class="nav__name">Certificates</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Contact</span>
+              </a>
+            </li>
+          </ul>
+          <script src="script.js"></script>
+        </div>
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+    <main class="main">
+
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__name">Helen Amalia Dengen</h1>
+            <h3 class="home__education">Mulawarman University student</h3>
+
+            <div class="home__buttons">
+              <a href="#" target="_blank" class="button button--ghost">DOWNLOAD CV</a>
+              <a href="#about" class="button">About me</a>
+            </div>
+          </div>
+
+          <div class="home__handle">
+            <img src="assets/img/helena.jpg" alt="" class="home__img" />
+          </div>
+
+          <a href="#about" class="home__scroll">
+            <i class="bx bxs-mouse home__scroll-icon"></i>
+            <span class="home__scroll-name">Scroll Down</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <span class="section__subtitle">My Intro</span>
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__container container grid">
+          <img src="assets/img/profil.jpg" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">
+              Halo perkenalkan Saya Helen Amalia Dengen bisa dipanggil helena, Mahasiswa dari Sistem Informasi Universitas Mulawarman.
+              Keahlian saya adalah membuat design interface.
+            </p>
+          <h1>Jenjang Pendidikan</h1>
+            <ul class="education-list">
+              <li class="education-item">
+                <div class="education-title">Sekolah Menengah Kejuruan</div>
+                 <div class="education-year">2019 - 2022</div>
+                 <div class="education-description">SMK Negeri 5 Samarinda</div>
+              </li>
+
+              <li class="education-item">
+                <div class="education-title">Perguruan Tinggi</div>
+                <div class="education-year">2022 - Sekarang</div>
+                <div class="education-description">Universitas Mualawarman</div>
+              </li>
+            </ul>
+            <a href="#contact" class="button">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="certificate">
+        <h2 class="section__title">Certificates</h2>
+
+        <div class="certificate__container bd-grid">
+          <a href="assets/Sertifikasi/sertifikat_insevent.jpg" class="certificate__img">
+            <img src="assets/Sertifikasi/sertifikat_insevent.jpg" alt="" />
+          </a>
+          <a href="assets/Sertifikasi/sertifikat_kepengurusan_inforsa.jpg" class="certificate__img">
+            <img src="assets/Sertifikasi/sertifikat_kepengurusan_inforsa.jpg" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h3 class="section__title">Contact Me</h3>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Write me your message</h3>
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Name</label>
+                <input type="text" name="user_name" placeholder="Insert Your Name!" class="contact__form-input" id="contact-name" />
+              </div>
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Email</label>
+                <input type="text" name="user_email" placeholder="Insert Your Email!" class="contact__form-input" id="contact-email" />
+              </div>
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Message</label>
+                <textarea cols="30" rows="10" name="user_project" placeholder="Insert Your Message!" class="contact__form-input" id="contact-project"></textarea>
+              </div>
+              <p class="contact__message" id="contact-message"></p>
+              <button class="button">Send Message!</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
